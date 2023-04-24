@@ -24,6 +24,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyDbIrLQJuQ1vhlowtx8zURbGlP7Nnz_Czo",
   authDomain: "food-waste-management-134ac.firebaseapp.com",
   projectId: "food-waste-management-134ac",
+  databaseURL: "https://food-waste-management-134ac-default-rtdb.firebaseio.com/",
   storageBucket: "food-waste-management-134ac.appspot.com",
   messagingSenderId: "216177900545",
   appId: "1:216177900545:web:180eac7c2181b586fa9400",
