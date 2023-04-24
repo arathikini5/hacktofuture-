@@ -64,7 +64,7 @@
 					</div>
 					<div class="form-group">
 						<input type="password" class="form-control py-4 shadow-none" id="password" placeholder="Set a Password"
-							name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+							name="password" 
 							title="Password should be At least 1 Uppercase At least 1 Lowercase
 							At least 1 Number,At least 1 Symbol, symbol allowed-->!@#$%^&*_=+- Min 8 chars and Max 12 chars" required>
 					</div>
@@ -75,14 +75,14 @@
 			</div>
 		</div>
 	</div>
-
-
+	<!-- pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" -->
+	<!-- ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?] -->
 	<!-- Javascript -->
 	<script>
 		
 		var numberFomrate = /^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/;
 		var emailFormate = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-		var pwdFormate = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$/;
+		var pwdFormate = /{8,30}$/;
 		
 		if(sessionStorage.getItem("role")!=null){
 			var role = document.getElementById("inlineFormCustomSelectPref").value = sessionStorage.getItem("role", role);;

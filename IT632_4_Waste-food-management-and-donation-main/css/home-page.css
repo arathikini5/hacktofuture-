@@ -352,6 +352,7 @@ h2 + .big {
 }
 .section-single-footer {
     padding: calc(1em + 2vh) 0 calc(1em + 3vh);
+    /* background-color: #636fa4; */
 }
 .section-single-inner {
     display: flex;
@@ -401,13 +402,17 @@ h2 + .big {
     display: block;
 }
 .bg-default {
-    background-color: #fff;
+    /* background-color: #6a8f8b56; */
+    background-image: url("/hacktofuture-/IT632_4_Waste-food-management-and-donation-main/images/R.jpg");
+    background: #e8cbc0;
+    background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
+    background: linear-gradient(to right, #e8cbc0, #636fa4);
 }
 .bg-default:not([style*="background-"]) + .bg-default:not([style*="background-"]) {
     padding-top: 0;
 }
 .bg-gray-100 {
-    background-color: #edeff4;
+    background-color: #926b9a;
 }
 .bg-gray-100:not([style*="background-"]) + .bg-gray-100:not([style*="background-"]) {
     padding-top: 0;
@@ -419,13 +424,20 @@ h2 + .big {
     padding-top: 0;
 }
 .bg-secondary-lightest {
-    background-color: #ecf6f3;
+    /* background: #e8cbc0;
+    background: -webkit-linear-gradient(to left, #e8cbc0, #636fa4);
+    background: linear-gradient(to left, #e8cbc0, #636fa4); */
+    background-color: #fff;
 }
 .bg-secondary-lightest:not([style*="background-"]) + .bg-secondary-lightest:not([style*="background-"]) {
     padding-top: 0;
 }
 .bg-secondary-light-1 {
     background-color: #def1df;
+    /* background: #e8cbc0;
+    background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
+    background: linear-gradient(to right, #e8cbc0, #636fa4); */
+    /* background: #fff; */
 }
 .bg-secondary-light-1:not([style*="background-"]) + .bg-secondary-light-1:not([style*="background-"]) {
     padding-top: 0;
