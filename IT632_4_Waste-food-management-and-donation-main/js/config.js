@@ -11,7 +11,11 @@
 // // Initialize Firebase
 // firebase.initializeApp(firebaseConfig);
 
+import { getApp } from "firebase/app";
+import { getFunctions, connectFunctionsEmulator } from "firebase/functions";
 
+const functions = getFunctions(getApp());
+connectFunctionsEmulator(functions, "localhost", 5001);
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
