@@ -72,6 +72,7 @@
 						<span class="iconify" data-icon="bi:arrow-right-short" data-width="20"
 							data-height="20"></span></button>
 				</div>
+				<!-- <p>Oh Yeah! Thanks for your Kind help towards Poor children.</p> -->
 			</div>
 		</div>
 	</div>
@@ -82,7 +83,7 @@
 		
 		var numberFomrate = /^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/;
 		var emailFormate = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-		var pwdFormate = /{8,30}$/;
+		var pwdFormate = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/;
 		
 		if(sessionStorage.getItem("role")!=null){
 			var role = document.getElementById("inlineFormCustomSelectPref").value = sessionStorage.getItem("role", role);;
