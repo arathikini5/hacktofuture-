@@ -8,7 +8,7 @@ firebase.database().ref("Restaurant").once("value", function (snapshots) {
                 
                 if(sessionStorage.getItem("role")=="NGO"){
                     if(val.NGOStatus == "Pending"){
-                        donationStatus = '<a href="feed2.html?token='+data.key+'&&n='+childSnaShot.val().mobilenumber+'"><button class="buttonact btn btn-warning" style="background-color:orange;color:white;">Accept Donation</button></a>';
+                        donationStatus = '<a href="feed2.html?token='+data.key+'&&n='+childSnaShot.val().mobilenumber+'"><button onclick="save()" class="buttonact btn btn-warning" style="background-color:orange;color:white;">Accept Donation</button></a>';
                     }else if(val.NGOStatus == "Accept"){
                         donationStatus = '<button class="buttonact btn btn-success" style="background-color:green;color:white;">Food Accepted &#10003;</button></a>';
                     }else{
